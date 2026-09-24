@@ -26,11 +26,11 @@ export default function RootLayout({ children, editor }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="h-full flex flex-row bg-[#051a23] font-sans">
-        <nav className="relative flex h-full flex-col items-center px-4 py-3">
+      <body className="h-full flex flex-col lg:flex-row bg-[#051a23] font-sans">
+        <nav className="relative flex w-full flex-row items-center justify-between px-4 py-3 lg:h-full lg:w-auto lg:flex-col lg:justify-start">
           <Link
             href="/"
-            className="absolute size-60 top-3 left-1/2 -translate-x-1/2"
+            className="relative size-16 shrink-0 lg:absolute lg:size-60 lg:top-3 lg:left-1/2 lg:-translate-x-1/2"
           >
             <Image
               src="/logo.png"
@@ -40,7 +40,7 @@ export default function RootLayout({ children, editor }: LayoutProps<"/">) {
               preload
             />
           </Link>
-          <div className="flex flex-1 flex-col items-center justify-center">
+          <div className="flex lg:flex-1 lg:flex-col lg:items-center lg:justify-center">
             <MainNav />
           </div>
         </nav>
