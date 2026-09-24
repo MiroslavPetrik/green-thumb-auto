@@ -1,32 +1,60 @@
-# Green Thumb Auto
+<div align="center">
+  <img height="320" width="320" style="margin: 32px" src="./public/logo.png">
+  <h1>Green Thumb Auto: Touch Grass</h1>
+</div>
 
-A fictional GTA collectible minigame. Explore various areas, take pictures of plants, edit images with the react image editor and store in your herbarium.
+A fictional GTA collectible minigame. Explore various areas, take pictures of plants, edit images with the [@unlayer/react-image-editor](https://github.com/unlayer/react-image-editor) and store in your herbarium.
 
-# Screens
+# Features
 
-The application has 4 main screens:
+## 🗺️ The Map
 
-## 1. The Map screen
+Start the game by selecting your start area. You can choose from 4 different nature sceneries.
 
-The map is the home screen, which displays a [map](./public/map.png).
-On the map you can pick a location to explore. You can pick from 2 areas:
+## 🏜️ The Areas
 
-- 🏜️ desert
-- 🏖️ beach
+While in the area, hover over the plants to see if they can be captured on a camera.
 
-The areas are represented as HTML maps which have `<area>` tags. Click on a an area
-navigates to the area screen.
+The banner in the top-left corner indicates how many plants can be collected in the current area.
 
-## 2. The Area Screen
+When all the plants are captured, move to the neigboring area by clicking arrows on the edges.
 
-The area screen displays an "in-game" screenshot, which displays few plants. The screenshots are in the `public/areas/` folder.
-User can hover the plants - the plants have SVG areas similarly as the main map displays the areas. A tooltip "[ TAKE PHOTO ]"
-will display.
+## 📸 The Camera screen
 
-The areas are navigated by url `/area/[slug]`. There is a finite number of areas, the links are generated statically with the function `generateStaticParams`.
+After taking a photo, you can edit it with various filters, labels, texts and more.
 
-This screen is navigated to, when the SVG areas in the root map are clicked.
+Click on the "Save" button in the top-right corner to save the plant in your herbarium.
 
-## 3. The Camera screen
+Continue taking the pohotos until you capture all the cultivars!
 
-## 4. The Herbarium
+## 🌷 The Herbarium
+
+Here you have 8 slots for your images. Watch your progres in the top-right corner.
+
+Your camera edits can be downloaded to your device, for further sharing.
+
+If you want to retake an image, click the trash icon. The removed plant will be again available out in the area - go take it!
+
+### Examples
+
+| Plucked                                             | Exotic                                            | Picked                                            |
+| --------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| ![Plucked artifact](./public/artifacts/plucked.jpg) | ![Exotic artifact](./public/artifacts/exotic.jpg) | ![Picked artifact](./public/artifacts/picked.jpg) |
+
+# Running the project
+
+Install Next.js and packages:
+
+```
+npm install
+```
+
+Start locally:
+
+```
+npm run dev
+```
+
+# License
+
+MIT
