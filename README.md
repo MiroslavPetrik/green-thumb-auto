@@ -5,6 +5,10 @@
 
 A fictional GTA collectible minigame. Explore various areas, take pictures of plants, edit images with the [@unlayer/react-image-editor](https://github.com/unlayer/react-image-editor) and store in your herbarium.
 
+# Demo
+
+https://github.com/user-attachments/assets/a1f3e2f9-13a6-4a47-98dc-b6d5c086bd92
+
 # Features
 
 ## 🗺️ The Map
